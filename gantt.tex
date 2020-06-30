@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{anyfontsize}
+\usepackage[absolute,overlay]{textpos} % For positioning of figures.
+\usepackage{caption}
+\usepackage{dirtytalk}
+\usepackage{pgfgantt}
+\pagestyle{empty}
+
+\begin{document}
+\newpage
+\vspace{-2cm}
+\scalebox{1}{
+\rotatebox{90}{
+	\begin{ganttchart}[hgrid,vgrid,x unit=4mm,time slot format=isodate]{2020-06-12}{2020-07-19}
+		\gantttitlecalendar{year, month, day, week=0} \\
+		\ganttbar[bar/.append style={fill=cyan}]{Advance Prototype Layout for Frame}{2020-06-12}{2020-06-19}\\
+		\ganttbar[bar/.append style={fill=cyan}]{Knitting \& Testing of Stretch Sensor}{2020-06-20}{2020-06-28}\\
+		\ganttbar[bar/.append style={fill=cyan}]{Construction \& Testing of Vibe Module}{2020-06-29}{2020-07-04}\\
+		\ganttbar[bar/.append style={fill=cyan}]{Frame Prototype with Vibe Module \& LilyPad}{2020-07-05}{2020-07-11}\\
+		\ganttbar[bar/.append style={fill=cyan}]{Add Stretch Sensor to Prototype}{2020-07-12}{2020-07-15}
+		\ganttnewline
+		\ganttmilestone{Milestone: Frame Prototype Complete}{2020-07-15}	\ganttnewline
+		\ganttbar[bar/.append style={fill=blue}]{Prepare Arm Sleeve (Velcro, Pre-Draw Circuit)}{2020-07-16}{2020-07-19}\\ \\ 
+		\ganttbar[bar/.append style={fill=red}]{Exam (Preparation)}{2020-07-15}{2020-07-19}\\
+	\end{ganttchart}
+}
+}
+\newpage
+\vspace{-2cm}
+\scalebox{1}{
+\rotatebox{90}{
+	\begin{ganttchart}[hgrid,vgrid,x unit=4mm,time slot format=isodate]{2020-07-16}{2020-08-16}
+		\gantttitlecalendar{year, month, day, week=5} \\
+		\ganttbar[bar/.append style={fill=blue}]{Prepare Arm Sleeve (Velcro, Pre-Draw Circuit)}{2020-07-16}{2020-07-22}\\
+		\ganttbar[bar/.append style={fill=blue}]{Sew Circuit On Arm Sleeve}{2020-07-23}{2020-07-30} \ganttnewline
+		\ganttmilestone{Milestone: First Wearable Prototype}{2020-07-30} \ganttnewline
+		\ganttbar[bar/.append style={fill=green}]{Testing \& Debugging of Wearable}{2020-07-31}{2020-08-10}\ganttnewline
+		\ganttmilestone{Milestone: Wearable Complete}{2020-08-10} \ganttnewline
+		\ganttbar[bar/.append style={fill=green}]{Preparation for Submission}{2020-08-11}{2020-08-15}\ganttnewline
+		\ganttmilestone{Milestone: Final Submission}{2020-08-15} \ganttnewline
+		\\
+		\ganttbar[bar/.append style={fill=red}]{Exam Phase}{2020-07-16}{2020-08-05}
+	\end{ganttchart}
+}
+}
+\end{document}
