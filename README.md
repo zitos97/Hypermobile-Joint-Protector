@@ -23,8 +23,8 @@ What things you need to install the software and how to install them:
 What hardware you need to construct the prototype:
 
 * microcontroller, e.g., LilyPad
-* stretch sensor, see [here](), [here](), or [here]()
-* vibration module, see [here]()
+* stretch sensor, see [here](https://www.instructables.com/id/Felted-Crochet-Stretch-Sensor/), [here](https://www.kobakant.at/DIY/?p=1762), or [here](https://www.instructables.com/id/DIY-Breath-Sensor-with-Arduino-Conductive-Knitted-/). It is important that the measured resistance of the stretch sensor must change remarkably if it gets stretched!
+* vibration module, see [here](https://www.kobakant.at/DIY/?p=8293)
 
 ## Running the code
 
