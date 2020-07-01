@@ -10,7 +10,7 @@ The decision when to activate the vibrotactile module is based on the measuremen
 
 ## Getting Started
 
-These instructions will get you a copy of the project prototype and running on your local machine for development and testing purposes. The instructions also provide circuit diagrams (photos and .fzz) for rebuilding the prototype not only Tinkercad but may also enable you to physically build a prototype (see Fritzing circuit and .ino code).
+These instructions will get you a copy of the project prototype and running on your local machine for your own development and testing purposes. The instructions also provide circuit diagrams (photos and .fzz) for rebuilding the prototype not only on Tinkercad but should also enable you to physically build a prototype (see Fritzing circuit .fzz (TODO) and .ino code).
 
 The Media folder provides additional photos and videos of prototypes, experiments, materials, etc as reference (and to store my data in case that my PC breaks). 
 
@@ -22,12 +22,14 @@ What things you need to install the software and how to install them:
 
 What hardware you need to construct the prototype:
 
-* TODO
-* TODO
-* TODO
+* microcontroller, e.g., LilyPad
+* stretch sensor, see [here](), [here](), or [here]()
+* vibration module, see [here]()
 
 ## Running the code
+
 The .ino code can be found in the folder ./Arduino Code
+
 Open the code in your Arduino IDE and connect you microcontroller to your PC (note that you might need a FTDI breakout module and a mini USB cable).
 Next, select the appropriate serial port and Arduino Board in the IDE tool bar. Then compile the program by clicking the check symbol and finally upload your program on the microcontroller by clicking on the right arrow. Now, you may disconnect the controller from your PC. For a more detailed description have a look at the [Sew Electric](http://sewelectric.org/diy-projects/3-programming-your-lilypad/) Website.
 
@@ -36,15 +38,15 @@ Next, select the appropriate serial port and Arduino Board in the IDE tool bar. 
 
 For building the circuit, you have two possibilities:
 
-* first build, execute (and maybe advance) the prototype on Tinkercad or
-* use the Fritzing file to directly build your physical prototype
+* first build, execute (and maybe advance) the prototype on Tinkercad and/or
+* use the Fritzing file to directly rebuild your own physical prototype
 
 ### Tinkercad
-An image of a Tinkercad circuit can be found in the folder .Media/Photos. Note that for purposes of simplicity, the stretch sensor is represented by a potentiometer.
-Copy/paste the given Arduino code into the Tinkercad code bar.
+An image and a simulation of my Tinkercad circuit can be found in the folder ./Media/Photos and ./Media/Videos, respecively. Note that for purposes of simplicity, the stretch sensor is represented by a potentiometer.
+Rebuild the depicted circuit and copy/paste the Arduino code into the Tinkercad code bar to execute the prototype.
 
 ### Fritzing
-The Fritzing circuit (.fzz) can be found in Media/Photos. (TODO. Not yet present!)
+The Fritzing circuit (.fzz) can be found in the folder ./Fritzing. (TODO. Not yet present!)
 
 ## Testing and Troubleshooting
 (TODO. No experiences yet!)
