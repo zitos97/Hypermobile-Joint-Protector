@@ -1,5 +1,6 @@
 # On the Development of a Hypermobile Joint Protector
 
+TODO SHORTEN
 This repository is dedicated to the project of the lecture Interactive Systems 2020 (Theme 1 - Textile Circuits) at Saarland University. 
 The joint protection assistant is a wearable designed to support people suffering from hypermobility. The design of the joint protection assistant is chosen such that it does not affect the overall mobility, i.e., can be worn as a simple tight and elastic arm sleeve (when focussing on the elbow joint only), but is able to give the user vibrotactile feedback if it perceives overstretching. Although we focus on elbow joints in this work only, feel welcome to adapt the proposed concept to other body regions or improve it. 
 
