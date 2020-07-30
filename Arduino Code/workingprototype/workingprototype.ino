@@ -1,4 +1,4 @@
-const int vibPin = 9;
+const int vibPin = 6;
 const int potPin = 2;  
  
 float val1 = 0; // recent value of potentiometer/stretch sensor
