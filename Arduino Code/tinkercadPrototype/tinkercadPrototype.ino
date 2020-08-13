@@ -1,14 +1,16 @@
-const int vibPin = 6;
-const int potPin = 2;  
+const int vibPin = 3;  // digital pin 3 for the vibration module
+const int potPin = 0;   // analog pin 0 for the potentiometer
  
-float val1 = 0; // recent value of potentiometer/stretch sensor
-float reference = 0; // reference value that val1 will be compared to
+int current = 0; // recent value of potentiometer/stretch sensor
+int reference = 0; // reference value that current will be compared to
 
 void setup() {
-  Serial.begin(9600);
+  pinMode(potPin, INPUT);
   pinMode(vibPin, OUTPUT);
   
+  
   // vibrate twice to signal that initial reference measurement starts now
+  // light up the LED simultaneously
   digitalWrite(vibPin, HIGH);
   delay(500);
   digitalWrite(vibPin, LOW);
@@ -20,12 +22,13 @@ void setup() {
   // give some time for adjustment
   delay(5000);
   // read current value of potentiometer
-  val1 = analogRead(potPin);   
-  val1 = map(val1, 0, 1023, 0, 255);
+  current = analogRead(potPin);   
+  current = map(current, 0, 1023, 0, 255);
   // set it as reference
-  reference = val1;
+  reference = current;
   
   // vibrate twice to signal that initialization phase is over
+  // light up the LED simultaneously
   digitalWrite(vibPin, HIGH);
   delay(500);
   digitalWrite(vibPin, LOW);
@@ -37,12 +40,11 @@ void setup() {
 
 void loop() {
   // read currect value of potentiometer/stretch sensor
-  val1 = analogRead(potPin);    
-  val1 = (float) map(val1, 0, 1023, 0, 255);
+  current = analogRead(potPin);    
+  current = map(current, 0, 1023, 0, 255);
   
-  Serial.println(val1); // print current value
   // if it is larger than the reference, notify the user, otherwise stop vibration
-  if (val1 > reference * 1.1) {
+  if (current > reference) {
     digitalWrite(vibPin, HIGH); 
   } else {
     digitalWrite(vibPin, LOW);
