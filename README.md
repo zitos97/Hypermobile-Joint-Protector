@@ -32,6 +32,39 @@ What hardware you need to construct the prototype:
 * conductive thread
 * tight arm sleeve
 
+* Arm Sleeve (e. g. for cyclists) or Compression Sleeve
+  ** must be tight and elastic
+* Non-Conductive Elastic Wool / Yarn (TODO Thickness)
+  ** e. g., Merino wool 
+* Conductive Yarn / Thread
+e. g., Bobbin (Stainless Steel) Thread
+* Multimeter
+* Shaftless Vibration Motor
+  ** should work with at least 3.3V
+* LED
+* Resistors
+  ** at least one 1k  Ω, one 330  Ω, and one 150   Ω resistor
+* Lilypad Arduino 328 Main Board
+  ** many other microcontrollers would work as well
+* NPN Transistor, Diode, Capacitor
+  ** requires a 2N2222 or 2N3904  NPN Transistor,  1N4001 Diode, and a 0.1µF ceramic capacitor
+* Sugru Silicone
+  ** can be replaced by any other insulating, flexible material
+* Small Piece of Plastic
+* Crochet Hooks (TODO size)
+* Sewing Needle
+* Snap Assortment (Male and Female)
+* Scissor
+* Hot Glue
+* Elastic Bands and Velcro Strips
+  ** add it to the sleeve to ensure that the sleeve is fixed on the arm
+  ** no hard requirement, depends on the elasticity of the sleeve
+* Alligator Clips
+  ** not a hard requirement but eases the multimeter use
+* Sewable Coin Cell Battery Holder (3V)
+  ** not a hard requirement for the prototype as you can power it as well via your computer (attention, you might need an extra breakout module depending on the microcontroller you use!)
+* Coin Cell Battery (3V)
+
 ## Running the code
 
 The .ino code can be found in the folder ./Arduino Code
@@ -48,14 +81,20 @@ For building the circuit, you have two possibilities:
 * use the Fritzing file to directly rebuild your own physical prototype
 
 ### Tinkercad
+
 An image and a simulation of my Tinkercad circuit can be found in the folder ./Media/Photos and ./Media/Videos, respecively. Note that for purposes of simplicity, the stretch sensor is represented by a potentiometer.
 Rebuild the depicted circuit and copy/paste the Arduino code into the Tinkercad code bar to execute the prototype.
 
 ### Fritzing
-The Fritzing circuit (.fzz) can be found in the folder ./Fritzing. (TODO. Not yet present!)
+
+The Fritzing circuit (.fzz) can be found in the folder ./Fritzing.
 
 ## Testing and Troubleshooting
-(TODO. No experiences yet!)
+
+* In case that your prototype or some parts do not work at all, check for loose connections. I.e., check if the threads are connected tightly to the microcontroller and to the electrical components such as resitors and transistors.
+* To avoid short circuits etc., ensure that there are no conductive yarns crossing each other. In case of crossings, make sure to isolate them such that the threads do no touch each other. The same hold for the yarns' ends that should not touch each other.
+* Use a power source that fits your microcontroller (usually between 3.3V and 5V).
+* Make sure to use the multimeter for testing purposes correctly. I.e., ensure that there is no loose contact between the conductive parts and the multimeter clips. An inappropriate use might give you unreliable testing results (demonstrated in the ./Media/Videos/misusedMultimeter.mp4).
 
 ## Built With
 
