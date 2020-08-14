@@ -33,7 +33,7 @@ What hardware you need to construct the prototype:
 * tight arm sleeve
 
 * Arm Sleeve (e. g. for cyclists) or Compression Sleeve
-  ** must be tight and elastic
+  * must be tight and elastic
 * Non-Conductive Elastic Wool / Yarn (TODO Thickness)
   ** e. g., Merino wool 
 * Conductive Yarn / Thread
