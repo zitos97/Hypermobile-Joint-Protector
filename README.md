@@ -22,47 +22,37 @@ What things you need to install the software and how to install them:
 
 What hardware you need to construct the prototype:
 
-* microcontroller, e.g., LilyPad
-* stretch sensor, see [here](https://www.instructables.com/id/Felted-Crochet-Stretch-Sensor/), [here](https://www.kobakant.at/DIY/?p=1762), or [here](https://www.instructables.com/id/DIY-Breath-Sensor-with-Arduino-Conductive-Knitted-/). It is important that the measured resistance of the stretch sensor must change remarkably if it gets stretched!
-* vibration module, see [here](https://www.kobakant.at/DIY/?p=8293)
-* resistors (at least 2)
-* NPN transistor
-* diode
-* capacitor
-* conductive thread
-* tight arm sleeve
-
 * Arm Sleeve (e. g. for cyclists) or Compression Sleeve
   * must be tight and elastic
 * Non-Conductive Elastic Wool / Yarn (TODO Thickness)
-  ** e. g., Merino wool 
+  * e. g., Merino wool 
 * Conductive Yarn / Thread
-e. g., Bobbin (Stainless Steel) Thread
+  * e. g., Bobbin (Stainless Steel) Thread
 * Multimeter
 * Shaftless Vibration Motor
-  ** should work with at least 3.3V
+  * should work with at least 3.3V
 * LED
 * Resistors
-  ** at least one 1k  Ω, one 330  Ω, and one 150   Ω resistor
+  * at least one 1k  Ω, one 330  Ω, and one 150   Ω resistor
 * Lilypad Arduino 328 Main Board
-  ** many other microcontrollers would work as well
+  * many other microcontrollers would work as well
 * NPN Transistor, Diode, Capacitor
-  ** requires a 2N2222 or 2N3904  NPN Transistor,  1N4001 Diode, and a 0.1µF ceramic capacitor
+  * requires a 2N2222 or 2N3904  NPN Transistor,  1N4001 Diode, and a 0.1µF ceramic capacitor
 * Sugru Silicone
-  ** can be replaced by any other insulating, flexible material
+  * can be replaced by any other insulating, flexible material
 * Small Piece of Plastic
-* Crochet Hooks (TODO size)
+* Crochet Hook
 * Sewing Needle
 * Snap Assortment (Male and Female)
 * Scissor
 * Hot Glue
 * Elastic Bands and Velcro Strips
-  ** add it to the sleeve to ensure that the sleeve is fixed on the arm
-  ** no hard requirement, depends on the elasticity of the sleeve
+  * add it to the sleeve to ensure that the sleeve is fixed on the arm
+  * no hard requirement, depends on the elasticity of the sleeve
 * Alligator Clips
-  ** not a hard requirement but eases the multimeter use
+  * not a hard requirement but eases the multimeter use
 * Sewable Coin Cell Battery Holder (3V)
-  ** not a hard requirement for the prototype as you can power it as well via your computer (attention, you might need an extra breakout module depending on the microcontroller you use!)
+  * not a hard requirement for the prototype as you can power it as well via your computer (attention, you might need an extra breakout module depending on the microcontroller you use!)
 * Coin Cell Battery (3V)
 
 ## Running the code
