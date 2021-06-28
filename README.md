@@ -1,17 +1,14 @@
 # Low-Fi Prototype of a Hypermobile Joint Protector Assistant
 
-This repository is dedicated to the project of the lecture Interactive Systems 2020 (Theme 1 - Textile Circuits) at Saarland University. 
-We aimed for the development of an eTextile concept that supports people suffering from hypermobility. The design of the joint protection assistant is chosen such that it does not affect the overall mobility but constantly keeps track of critical overextensions. When detecting such an overextension which might occur, e.g., during sports, the user is noticed immediately such that they can fix their posture appropriately. Although we focus on elbow joints only, feel welcome to adapt the proposed concept to other body regions or to further advance the overall concept. 
+As part of the course Interactive Systems 2020 (Theme 1 - Textile Circuits) at Saarland University, I aimed for the development of an eTextile concept that supports people suffering from hypermobility. Our proposed low-fi prototype keeps track of elbow joint stretchings with the help of a self-made, crocheted stretch sensor constantly measuring the degree of (over)stretching. When identifying a critical stretchin, the wearer is notified by some vibrotactile and visual feedback. If no overstretching is detected, the wearable should not be perceived as such and is nothing else than a usual arm sleeve. 
 
-Our proposed low-fi prototype keeps track of arm stretchings with the help of a self-made, crocheted stretch sensor constantly measuring the degree of (over)extension. When identifying a possibly overextended elbow, the user is notified by some vibrotactile feedback. If no overstretching is detected, the wearable should not be perceived as such and is nothing else than a usual arm sleeve. One clue for the detection of overextensions is the required initial configuration of the prototype before using it. For that, the arm must be held in a position in which it is stretched but not overextended yet. This position/measured degree of extension will be used to configure the system since it acts as a threshold for identifying overextensions. 
 
-More technically speaking, the decision when to activate the vibrotactile module is based on the measurements of the integrated stretch sensor on the inside of the am sleeve and a microcontroller programmed accordingly. The microcontroller uses the measurements of the stretch sensor to activate the vibe module if those measured values are larger than the initially determined threshold. It tells the module to stop vibration if the measurement falls below this threshold again. In turn, this means that the microcontroller must periodically take and interpret the current state of our stretch sensor. An LED might be used in addition to the vibration module to offer some visual feedback, as well.
 
 ## Getting Started
 
-These instructions will get you a copy of the project prototype and running on your local machine for your own development and testing purposes. The instructions also provide circuit diagrams (photos and .fzz) for rebuilding the prototype not only on Tinkercad but should also enable you to physically build a prototype (see Fritzing circuit .fzz and .ino code).
+These instructions will get you a copy of the project prototype and running on your local machine for your own development and testing purposes. The instructions also provide circuit diagrams (photos and .fzz) for rebuilding the prototype in Tinkercad and should enable you to physically build a prototype (see Fritzing circuit .fzz and .ino code).
 
-More details on how to crochet your own stretch sensor can be found in the report (see .pdf file).
+Details on how to crochet your own stretch sensor and the construction of the sleeve can be found in the [report](https://github.com/zitos97/Hypermobile-Joint-Protector/blob/master/IAS20_ProjectReport.pdf) or in the [Wiki](https://github.com/zitos97/Hypermobile-Joint-Protector/wiki).
 
 The Media folder provides additional photos and videos of prototypes, experiments, materials, etc as reference. 
 
@@ -66,11 +63,12 @@ Next, select the appropriate serial port and Arduino Board in the IDE tool bar. 
 
 ## Building the circuit
 
-For building the circuit, you have two possibilities:
+For building the circuit, you have several possibilities:
 
 * first build, execute (and maybe advance) the prototype on Tinkercad and/or
 * use the Fritzing file to directly rebuild your own physical prototype
-* it is recommended to first sketch the circuit on top of the sleeve using a erasable textile marker
+* follow the description in the [Wiki](https://github.com/zitos97/Hypermobile-Joint-Protector/wiki) or 
+* download the [report](https://github.com/zitos97/Hypermobile-Joint-Protector/blob/master/IAS20_ProjectReport.pdf)
 
 ### Tinkercad
 
