@@ -1,7 +1,7 @@
-# Low-Fi Prototype of a Hypermobile Joint Protector Assistant
+# Low-Fi Prototype of a Hypermobile Joint Protection Assistant
 
-As part of the course Interactive Systems 2020 (Theme 1 - Textile Circuits) at Saarland University, I aimed for the development of an eTextile concept that supports people suffering from hypermobility. Our proposed low-fi prototype keeps track of elbow joint stretchings with the help of a self-made, crocheted stretch sensor constantly measuring the degree of (over)stretching. When identifying a critical stretchin, the wearer is notified by some vibrotactile and visual feedback. If no overstretching is detected, the wearable should not be perceived as such and is nothing else than a usual arm sleeve. 
-
+As part of the course Interactive Systems 2020 (Theme 1 - Textile Circuits) at Saarland University, I aimed for the conceptualization and implementation of an eTextile that supports people suffering from hypermobility. The proposed low-fi prototype keeps track of elbow joint stretchings with the help of a self-made, crocheted stretch sensor constantly measuring the degree of (over)stretching. When identifying a critical stretching, the wearer is notified by some vibrotactile and visual feedback. If no overstretching is detected, the wearable should be perceived as nothing different than a usual arm sleeve. 
+For details on the concept, background, and evolution of the project, feel free to check out my [Wiki](https://github.com/zitos97/Hypermobile-Joint-Protector/wiki).
 
 
 ## Getting Started
